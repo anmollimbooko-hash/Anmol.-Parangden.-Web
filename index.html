@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmol Parangden | Indian Creator</title>
+
+  <style>
+    /* ===== COLOR THEME ===== */
+    :root {
+      --primary: #4A6CF7;
+      --secondary: #FF914D;
+      --bg1: #0f0f3d;
+      --bg2: #1a1a60;
+      --bg3: #262673;
+      --text-light: #ffffff;
+      --text-dark: #dddddd;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+      color: var(--text-light);
+      overflow-x: hidden;
+    }
+
+    /* ===== HERO SECTION ===== */
+    header {
+      text-align: center;
+      padding: 120px 20px;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(6px);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3.6rem;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 0 0 25px rgba(255,255,255,0.3);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== TYPEWRITER EFFECT ===== */
+    #typewriter {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      border-right: 3px solid white;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 5s steps(40, end) forwards, blink .8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to   { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+      border-left: 6px solid var(--secondary);
+      padding-left: 12px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.15rem;
+      color: var(--text-dark);
+    }
+
+    /* ===== IMAGE STYLE ===== */
+    .img-banner {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 30px auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.5);
+    }
+
+    /* ===== QUOTES ===== */
+    .quote {
+      text-align: center;
+      font-size: 1.4rem;
+      font-style: italic;
+      margin: 60px 0;
+      opacity: 0.85;
+    }
+
+    /* ===== PROJECT CARDS ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px;
+      background: rgba(0,0,0,0.3);
+      color: #fff;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header>
+    <h1>I Am Anmol Parangden</h1>
+    <div id="typewriter">Indian Creator • Web Builder • App Maker • Future Innovator</div>
+    <p style="max-width:700px;margin:auto;margin-top:20px;">
+      Welcome to my digital world — where I build new ideas, experiment with technology,
+      support Indian platforms, and create something new every single day.
+    </p>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section>
+    <h2>About Me</h2>
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200" class="img-banner">
+
+    <p>
+      I am <strong>Anmol Parangden</strong>, a young Indian creator with a deep passion for designing websites, 
+      building lightweight apps, and crafting creative online content. I believe that India has talent, 
+      India has power, and India has potential — and I want to be one of the people who proves it.
+    </p>
+
+    <p>
+      I use many Indian platforms like <strong>Moj, Chingari, IAI Social, Nyburs</strong> and share content under the same name everywhere.  
+      My goal is simple: <strong>inspire young creators to build — not wait</strong>.
+    </p>
+
+    <div class="quote">“If you can imagine it, you can build it. Start small, stay consistent, grow big.”</div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section>
+    <h2>My Best Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>🌟 QuickNotes India</h3>
+        <p>
+          A super-fast, offline working notes app I built for students who want something simple, clean, 
+          ads-free and instant. It loads in under 1 second and works even with poor Indian networks.
+        </p>
+        <img src="https://images.unsplash.com/photo-1587613865763-4b8b0f62e6e3?q=80&w=800" class="img-banner">
+      </div>
+
+      <div class="card">
+        <h3>🇮🇳 LocalFeeds India</h3>
+        <p>
+          A tool where users can paste links from Moj, Chingari, Josh and instantly see a clean preview.
+          Helps creators share content easily across different apps.
+        </p>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" class="img-banner">
+      </div>
+
+      <div class="card">
+        <h3>🤖 PromptPack AI</h3>
+        <p>
+          A long curated collection of AI prompts I designed myself — for thumbnails, covers, hero images,
+          and website visuals. Helps beginners create professional images quickly.
+        </p>
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?q=80&w=800" class="img-banner">
+      </div>
+
+    </div>
+
+    <div class="quote">“Don't wait for the future. Build the future.”</div>
+  </section>
+
+  <!-- ===== VISION ===== -->
+  <section>
+    <h2>My Future Vision</h2>
+    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200" class="img-banner">
+
+    <p>
+      My long-term dream is to create a powerful Indian platform where young creators can learn coding, 
+      AI, designing, business ideas and build their own apps or websites with zero difficulty.
+    </p>
+
+    <p>
+      I want to help India become a digital powerhouse — by making tools that are fast, lightweight,
+      easy for everyone, and completely free.
+    </p>
+
+    <div class="quote">“Make India proud by building something new every day.”</div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section>
+    <h2>Connect With Me</h2>
+    <p>
+      You can find me everywhere using the same name: <strong>Anmol Parangden</strong>.  
+      I am active on:
+      <br><br>
+      • Moj  
+      • Chingari  
+      • IAI Social  
+      • Nyburs  
+      • YouTube  
+    </p>
+
+    <p>Let’s build something new. Let’s build something Indian.</p>
+  </section>
+
+  <footer>
+    © 2025 — Designed & Created by <strong>Anmol Parangden</strong> • Proudly Indian 🇮🇳
+  </footer>
+
+</body>
+</html>
